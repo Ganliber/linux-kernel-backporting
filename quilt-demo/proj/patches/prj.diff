@@ -1,0 +1,28 @@
+diff --color -Nur old-project/src/drivers/drv1.h new-project/src/drivers/drv1.h
+--- old-project/src/drivers/drv1.h	2022-09-09 16:29:55.524191836 +0800
++++ new-project/src/drivers/drv1.h	2022-09-09 16:31:28.137213185 +0800
+@@ -7,9 +7,8 @@
+ typedef struct 
+ {
+     /* data */
+-    int p1;
+-    int p2;
+-    int p3;
++    int p_new1;
++    int p_new2;
+ } lib1;
+ 
+ void func_lib1(void);
+diff --color -Nur old-project/src/usr/usr.c new-project/src/usr/usr.c
+--- old-project/src/usr/usr.c	1970-01-01 08:00:00.000000000 +0800
++++ new-project/src/usr/usr.c	2022-09-09 17:11:23.733029333 +0800
+@@ -0,0 +1 @@
++#include "usr.h"
+diff --color -Nur old-project/src/usr/usr.h new-project/src/usr/usr.h
+--- old-project/src/usr/usr.h	1970-01-01 08:00:00.000000000 +0800
++++ new-project/src/usr/usr.h	2022-09-09 17:10:52.065591264 +0800
+@@ -0,0 +1,4 @@
++#ifndef USR1_H
++#define USR1_H
++#include "def.h"
++#endif
