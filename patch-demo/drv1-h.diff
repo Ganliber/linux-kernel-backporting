@@ -1,0 +1,14 @@
+--- old-project/src/drivers/drv1.h	2022-09-09 16:29:55.524191836 +0800
++++ new-project/src/drivers/drv1.h	2022-09-09 16:31:28.137213185 +0800
+@@ -7,9 +7,8 @@
+ typedef struct 
+ {
+     /* data */
+-    int p1;
+-    int p2;
+-    int p3;
++    int p_new1;
++    int p_new2;
+ } lib1;
+ 
+ void func_lib1(void);
